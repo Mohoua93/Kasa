@@ -1,3 +1,4 @@
+// About.jsx
 import React from 'react';
 import './About.css';
 import featuredImage from '../Asset/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png'; 
@@ -35,7 +36,12 @@ const About = () => {
             {/* Accordéons dynamiques */}
             <section className="accordion-section">
                 {sections.map((section, index) => (
-                    <Collapse key={index} title={section.title} content={section.content} />
+                    <Collapse 
+                        key={index} 
+                        title={section.title} 
+                        content={section.content} 
+                        className={`accordion-menu ${index === sections.length - 1 ? 'last-menu' : 'menu-closed'}`} 
+                    />
                 ))}
             </section>
 
@@ -46,5 +52,6 @@ const About = () => {
 };
 
 export default About;
+
 
 

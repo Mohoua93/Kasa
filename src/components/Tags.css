@@ -1,0 +1,16 @@
+/* Tags */
+.tags ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .tags li {
+    background-color: #fe6060;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: white;
+  }
